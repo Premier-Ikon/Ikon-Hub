@@ -39,6 +39,13 @@ const applications: Application[] = [
     iconColor: 'green',
     iconComponent: <DollarSign />,
   },
+  {
+    id: 'giveaway-processor',
+    name: 'Giveaway Processor',
+    url: 'https://giveaway-processor-frontend.vercel.app/',
+    iconColor: 'green',
+    iconComponent: <DollarSign />,
+  },
 
 ]
 
