@@ -1,0 +1,230 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-8) var(--space-4) 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: var(--space-10);
+  padding-top: var(--space-6);
+  max-width: 900px;
+}
+
+.app-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-sm);
+}
+
+.app-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.app-title-prefix {
+  color: var(--text-primary);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.app-title-gradient {
+  background: linear-gradient(135deg, #2196F3 0%, #9C27B0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.app-main {
+  width: 100%;
+  flex: 1;
+  margin-bottom: var(--space-8);
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-footer {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  padding: var(--space-5) var(--space-4);
+  margin-top: auto;
+  margin-bottom: 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+/* Clean Card Style */
+.app-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: var(--transition-base);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-hover);
+}
+
+.app-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.app-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.app-card-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2;
+}
+
+.app-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.app-card-button {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-family: inherit;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+.app-card-button:hover {
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  transform: translateY(-1px);
+}
+
+.app-card-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: var(--space-6) var(--space-3) 0;
+  }
+
+  .app-footer {
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .app-header {
+    margin-bottom: var(--space-8);
+    padding-top: var(--space-4);
+  }
+
+  .app-title {
+    font-size: 2.25rem;
+  }
+
+  .app-description {
+    font-size: 0.9375rem;
+  }
+
+  .apps-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .app-card {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.875rem;
+  }
+
+  .app-logo {
+    width: 48px;
+    height: 48px;
+    font-size: 1.125rem;
+  }
+
+  .app-card {
+    padding: var(--space-3);
+  }
+
+  .app-card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .app-card-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
