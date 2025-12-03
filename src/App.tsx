@@ -1,5 +1,5 @@
 import AppCard from './components/AppCard'
-import { ClipboardList, DollarSign, Package, Bell, Gift } from 'lucide-react'
+import { ClipboardList, DollarSign, Package, Bell, Gift, FolderSync } from 'lucide-react'
 import './App.css'
 
 interface Application {
@@ -45,6 +45,13 @@ const applications: Application[] = [
     url: 'https://giveaway-processor-frontend.vercel.app/',
     iconColor: 'pink',
     iconComponent: <Gift />,
+  },
+  {
+    id: 'shipstation-sync',
+    name: 'ShipStation Sync',
+    url: 'https://shipstation-monday-sync.vercel.app/',
+    iconColor: 'default',
+    iconComponent: <FolderSync />,
   },
 
 ]
