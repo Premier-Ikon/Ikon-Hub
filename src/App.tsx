@@ -1,12 +1,12 @@
 import AppCard from './components/AppCard'
-import { ClipboardList, DollarSign, Package, Bell } from 'lucide-react'
+import { ClipboardList, DollarSign, Package, Bell, Gift } from 'lucide-react'
 import './App.css'
 
 interface Application {
   id: string
   name: string
   url: string
-  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'default'
+  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'pink' | 'default'
   iconComponent?: React.ReactNode
 }
 
@@ -43,8 +43,8 @@ const applications: Application[] = [
     id: 'giveaway-processor',
     name: 'Giveaway Processor',
     url: 'https://giveaway-processor-frontend.vercel.app/',
-    iconColor: 'green',
-    iconComponent: <DollarSign />,
+    iconColor: 'pink',
+    iconComponent: <Gift />,
   },
 
 ]
