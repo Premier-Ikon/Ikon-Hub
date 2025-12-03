@@ -1,5 +1,5 @@
 import AppCard from './components/AppCard'
-import { ClipboardList, CheckCircle2, FileText, DollarSign, Package, Bell } from 'lucide-react'
+import { ClipboardList, DollarSign, Package, Bell } from 'lucide-react'
 import './App.css'
 
 interface Application {
