@@ -4,7 +4,7 @@ interface Application {
   id: string
   name: string
   url: string
-  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'pink' | 'default'
+  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'pink' | 'red' | 'default'
   iconComponent?: React.ReactNode
 }
 
@@ -28,6 +28,7 @@ function AppCard({ application }: AppCardProps) {
     orange: '#FF9800',
     blue: '#03A9F4', // Light blue to match reference
     pink: '#F093FB',
+    red: '#FF0000',
     default: '#667EEA',
   }
 

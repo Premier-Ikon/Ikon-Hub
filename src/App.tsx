@@ -6,7 +6,7 @@ interface Application {
   id: string
   name: string
   url: string
-  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'pink' | 'default'
+  iconColor?: 'green' | 'purple' | 'orange' | 'blue' | 'pink' | 'red' | 'default'
   iconComponent?: React.ReactNode
 }
 
@@ -51,6 +51,13 @@ const applications: Application[] = [
     name: 'ShipStation Sync',
     url: 'https://shipstation-monday-sync.vercel.app/',
     iconColor: 'default',
+    iconComponent: <FolderSync />,
+  },
+  {
+    id: 'label-generator',
+    name: 'Label Generator',
+    url: 'https://premier-ikon-label-generator.replit.app/',
+    iconColor: 'red',
     iconComponent: <FolderSync />,
   },
 
